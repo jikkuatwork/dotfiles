@@ -52,34 +52,6 @@ map <leader><down> <c-w><down>
 map <leader><left> <c-w><left>
 map <leader><right> <c-w><right>
 
-call plug#begin('~/.vim/plugged')
-  Plug 'vimwiki/vimwiki'
-  Plug 'JikkuJose/lightline.vim'
-  Plug 'kien/ctrlp.vim'
-  Plug 'tomtom/tcomment_vim'
-  Plug 'tommcdo/vim-exchange'
-  Plug 'godlygeek/tabular'
-  Plug 'tpope/vim-surround'
-  Plug 'dockyard/vim-easydir'
-  Plug 'ntpeters/vim-better-whitespace'
-  Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
-  Plug 'HerringtonDarkholme/yats.vim'
-  Plug 'tpope/vim-endwise'
-  Plug 'ruby-formatter/rufo-vim'
-  Plug 'jremmen/vim-ripgrep'
-  Plug 'TovarishFin/vim-solidity'
-  Plug 'jonsmithers/vim-html-template-literals'
-  Plug 'pangloss/vim-javascript'
-  Plug 'tpope/vim-markdown'
-  Plug 'mustache/vim-mustache-handlebars'
-  Plug 'dart-lang/dart-vim-plugin'
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
-  Plug 'morhetz/gruvbox'
-  Plug 'psf/black', { 'branch': 'stable' }
-  Plug 'tikhomirov/vim-glsl'
-call plug#end()
-
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Configs
