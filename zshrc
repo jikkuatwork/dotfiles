@@ -8,4 +8,4 @@ source ~/dotfiles/aliases.zsh
 source ~/dotfiles/functions.zsh
 
 set -o vi
-PS1='${PWD##*/} (../${PWD#*/}) \$ '
+PS1="${PWD##*/} (../${PWD#*/}) \$ "
