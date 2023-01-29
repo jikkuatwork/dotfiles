@@ -29,3 +29,8 @@ chruby 3.2.0
 # Node
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# Bun
+[ -s "/home/alan/.bun/_bun" ] && source "/home/alan/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
