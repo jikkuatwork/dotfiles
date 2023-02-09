@@ -59,9 +59,9 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 let g:rufo_auto_formatting = 1
 
 let g:coc_global_extensions = ['coc-tsserver']
-let g:python_host_prog = '/usr/bin/python2'
-let g:python2_host_prog = '/usr/bin/python'
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python_host_prog =  system('pyenv which python | tr -d "\n"')
+let g:python3_host_prog =  system('pyenv which python3 | tr -d "\n"')
+let g:node_host_prog = system('volta which neovim-node-host | tr -d "\n"')
 
 let g:ctrlp_user_command = [
     \ '.git', 'cd %s && git ls-files . -co --exclude-standard',
