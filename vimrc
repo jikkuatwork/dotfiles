@@ -17,6 +17,10 @@ nmap gn :%s///gn<cr>
 nmap gt :Telescope<cr>
 nmap gr :%s///g<cr>
 
+call plug#begin('~/.vim/plugged/')
+  Plug 'itchyny/lightline.vim'
+call plug#end()
+
 function! g:CopyToClipboard()
   let old_z = @z
   normal! gv"zy
@@ -69,11 +73,11 @@ let g:ctrlp_user_command = [
     \ ]
 let g:ctrlp_working_path_mode = '0'
 
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? coc#_select_confirm() :
+"       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
 
 function! s:check_back_space() abort
   let col = col('.') - 1
