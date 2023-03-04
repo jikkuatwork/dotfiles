@@ -16,6 +16,7 @@ set nobackup nowritebackup
 nmap gn :%s///gn<cr>
 nmap gt :Telescope<cr>
 nmap gr :%s///g<cr>
+colorscheme Tomorrow-Night-Bright
 
 call plug#begin('~/.vim/plugged/')
   Plug 'itchyny/lightline.vim'
