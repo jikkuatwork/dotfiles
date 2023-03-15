@@ -20,6 +20,10 @@ colorscheme Tomorrow-Night-Bright
 
 call plug#begin('~/.vim/plugged/')
   Plug 'itchyny/lightline.vim'
+
+  Plug 'prettier/vim-prettier', {
+      \ 'do': 'yarn install --frozen-lockfile --production',
+      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 call plug#end()
 
 function! g:CopyToClipboard()
